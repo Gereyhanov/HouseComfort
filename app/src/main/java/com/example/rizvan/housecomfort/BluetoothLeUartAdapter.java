@@ -25,21 +25,19 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  * Created by Rizvan on 11.05.2015.
  */
 
+
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
 public class BluetoothLeUartAdapter extends BluetoothGattCallback implements BluetoothAdapter.LeScanCallback{
 
     // UUIDs for UART service and associated characteristics.
-    // UUIDs для UART сервисов и связанных с ними характеристик.
     public static UUID UART_UUID = UUID.fromString("6E400001-B5A3-F393-E0A9-E50E24DCCA9E");
     public static UUID TX_UUID   = UUID.fromString("6E400002-B5A3-F393-E0A9-E50E24DCCA9E");
     public static UUID RX_UUID   = UUID.fromString("6E400003-B5A3-F393-E0A9-E50E24DCCA9E");
 
     // UUID for the UART BTLE client characteristic which is necessary for notifications.
-    // UUID для характеристик клиента UART BTLE, дкоторая необходима для уведомлений
     public static UUID CLIENT_UUID = UUID.fromString("00002902-0000-1000-8000-00805f9b34fb");
 
     // UUIDs for the Device Information service and associated characeristics.
-    // UUIDs службы для информации об устройстве и связаных с ними характеристик.
     public static UUID DIS_UUID       = UUID.fromString("0000180a-0000-1000-8000-00805f9b34fb");
     public static UUID DIS_MANUF_UUID = UUID.fromString("00002a29-0000-1000-8000-00805f9b34fb");
     public static UUID DIS_MODEL_UUID = UUID.fromString("00002a24-0000-1000-8000-00805f9b34fb");
@@ -64,7 +62,6 @@ public class BluetoothLeUartAdapter extends BluetoothGattCallback implements Blu
     private boolean disAvailable;
 
     // Queues for characteristic read (synchronous)
-    // очереди для чтения характеристик (синхронные)
     private Queue<BluetoothGattCharacteristic> readQueue;
 
     // Interface for a BluetoothLeUart client to be notified of UART actions.
@@ -159,7 +156,6 @@ public class BluetoothLeUartAdapter extends BluetoothGattCallback implements Blu
         tx = null;
         rx = null;
     }
-
 
 
     // Stop any in progress UART device scan.
