@@ -3,4 +3,11 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="showText_exit">Press again to exit</string>
+
+    //*********Nav bar******************************
+    <string name="nav_bar_item_1">Devices</string>
+    <string name="nav_bar_item_2">Scan devices</string>
+    <string name="nav_bar_item_3">Settings</string>
+
 </resources>
