@@ -6,8 +6,19 @@
     <string name="showText_exit">Press again to exit</string>
 
     //*********Nav bar******************************
-    <string name="nav_bar_item_1">Devices</string>
-    <string name="nav_bar_item_2">Scan devices</string>
-    <string name="nav_bar_item_3">Settings</string>
+    <string name="nav_bar_item_1">Устройства</string>
+    <string name="nav_bar_item_2">Сценарии</string>
+    <string name="nav_bar_item_3">Сканирование устройств</string>
+    <string name="nav_bar_item_4">Настройки</string>
+    <string name="textTitleCardView">Photo Title</string>
+
+
+    <string name="audio_system">Аудио система</string>
+    <string name="conditioner_1">Кондиционер 1</string>
+    <string name="tv_1">Телевизор 1</string>
+    <string name="tv_2">Телевизор 2</string>
+    <string name="tv_3">Телевизор 3</string>
+    <string name="conditioner_2">Кондиционер 2</string>
+    <string name="dodo_mode">ДоДо сценарии</string>
 
 </resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:gravity="center_horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        cardview:cardElevation="0dp"
+        cardview:cardPreventCornerOverlap="false"
+        cardview:cardCornerRadius="0dp"
+        android:background="#ffffffff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#ffffffff">
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/buttonDevicePower"
+                android:background="@drawable/user_ic_power"
+                android:layout_gravity="bottom"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="20dp" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/buttonDeviceOne"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/buttonDevicePower"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/user_ic_play"
+                android:layout_marginLeft="20dp" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/buttonDeviceTwo"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/buttonDeviceOne"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/user_ic_next_music"
+                android:layout_marginLeft="20dp" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/buttonDeviceThree"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/buttonDeviceTwo"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/user_ic_volume_down"
+                android:layout_marginLeft="20dp" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/buttonDeviceFour"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/buttonDeviceThree"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/user_ic_volume_up"
+                android:layout_marginLeft="20dp" />
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/buttonDeviceSize"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/buttonDeviceFour"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/user_ic_arrow_green" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="top"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:id="@+id/imageViewDeviceCard"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_audio"
+                    android:layout_marginTop="0dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/textTitleCardView"
+                    android:id="@+id/textViewDeviceCardTitle"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="35dp"
+                    android:textSize="25dp"
+                    android:elegantTextHeight="true"
+                    android:textIsSelectable="false"
+                    android:textColorHighlight="#ff6b8bff"
+                    android:textColorHint="#ff23ff00"
+                    android:textColorLink="#ffff001c" />
+
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/imageViewBottomLine"
+        android:background="#ff3cdd9b" />
+
+
+</LinearLayout>
